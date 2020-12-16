@@ -1,0 +1,10 @@
+		[
+			{
+				"name" : "radio foo",
+				"url" : "http://foo.com/;stream.mp3"
+			},
+			{
+				"name" : "radyo bar",
+				"url" : "http://bar.com/playlist.m3u8"
+			}
+		]
