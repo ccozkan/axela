@@ -3,7 +3,7 @@ import os
 from credentials import *
 import speech_recognition as sr
 
-from random_radio import *
+from aux.play_random_radio.random_radio import *
 
 bot = telebot.TeleBot(API_TOKEN)
 
