@@ -11,13 +11,13 @@ Telegram Bot for controlling your Raspberry Pi and make it perform on custom voi
 ```
 git clone https://github.com/ccozkan/axela
 cd axela
+cp credentials.py_example credentials.py
 ```
 
-1) `cp credentials.py_example credentials.py`
-2) go to @botfather at Telegram and create yourself a bot
-3) save your api token on credentials.py
-4) go to @rawdatabot and type something, grab ["message"]["from"]["id"]
-5) save this on credentials.py as chat id
+1) go to @botfather at Telegram and create yourself a bot
+2) save your api token next to `API_TOKEN=` on credentials.py (with surrounding quotes)
+3) go to @rawdatabot and type something, grab ["message"]["from"]["id"]
+4) save this next to `CHAT_ID=` on credentials.py (without quotes)
 
 #### minimum a.k.a. 'I am going to implement my own auxillary scripts'
 
