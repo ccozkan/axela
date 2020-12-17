@@ -14,7 +14,6 @@ cd axela
 #### minimum a.k.a. 'I am going to implement my own auxillary scripts'
 
 ```
-chmod +x setup_minimum.sh
 bash setup_minimum.sh
 ```
 
@@ -22,6 +21,5 @@ bash setup_minimum.sh
 #### complete a.k.a. 'I might use present auxillary scripts as well'
 
 ```
-chmod +x setup_minimum.sh
 bash setup_complete.sh
 ```
