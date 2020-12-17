@@ -49,7 +49,7 @@ def handle_docs_audio(message):
             bot.reply_to(message, 'no')
 
     except Exception as e:
-        bot.reply_to(message,'-__' + dil)
+        bot.reply_to(message, e)
         log.error(e)
 
 while True:
