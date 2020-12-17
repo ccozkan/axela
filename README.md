@@ -22,6 +22,6 @@ bash setup_minimum.sh
 #### complete a.k.a. 'I might use present auxillary scripts as well'
 
 ```
-chmod +x setup_minimum.sh
+chmod +x setup_maximum.sh
 bash setup_complete.sh
 ```
