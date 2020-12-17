@@ -1,2 +1,2 @@
 sudo apt-get install ffmpeg
-pip3 install -- user pytelegrambotapi
+pip3 install --user pytelegrambotapi
