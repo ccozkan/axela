@@ -3,7 +3,7 @@ import os
 from credentials import *
 import speech_recognition as sr
 
-from aux.play_random_radio.random_radio import *
+from aux.play_radio.radio import *
 
 bot = telebot.TeleBot(API_TOKEN)
 
@@ -43,6 +43,10 @@ def handle_docs_audio(message):
                 play_random_radio()
             elif recognized_string == 'stop radio':
                 stop_radio()
+            elif 'play radio' in recognized_string:
+                play_radio(recognized_string.split()[-1])
+            elif recognized_string == 'list radios':
+                bot.reply_to(message, list_radios())
             else:
                 bot.reply_to(message, 'Hmmm, what is "' + recognized_string + '?"')
         else:
