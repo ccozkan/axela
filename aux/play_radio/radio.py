@@ -1,4 +1,5 @@
 import os
+import subprocess
 import json
 from random import randint
 from word2number import w2n
@@ -10,8 +11,9 @@ def play_random_radio():
     try:
         stop_radio()
     finally:
-        random_station = random_element_of_an_array(radio_stations)
-        os.system('espeak "' +  random_station['name'] + '" && sleep 2 && mpv ' + random_station['url'])
+        radio_station = random_element_of_an_array(radio_stations)
+        subprocess.call(['espeak', radio_station['name']])
+        subprocess.call(['mpv', radio_station['url']])
 
 def random_element_of_an_array(array):
     index = randint(0, len(array) - 1)
@@ -26,7 +28,8 @@ def play_radio(index_word):
     try:
         stop_radio()
     finally:
-        os.system('espeak "' +  radio_station['name'] + '" && sleep 2 && mpv ' + radio_station['url'])
+        subprocess.call(['espeak', radio_station['name']])
+        subprocess.call(['mpv', radio_station['url']])
 
 def list_radios():
     radio_list = ''
