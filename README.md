@@ -14,9 +14,9 @@ cd axela
 cp credentials.py_example credentials.py
 ```
 
-1) go to @botfather at Telegram and create yourself a bot
+1) go to `@botfather` at Telegram and create yourself a bot
 2) save your api token next to `API_TOKEN=` on credentials.py (with surrounding quotes)
-3) go to @rawdatabot and type something, grab ["message"]["from"]["id"]
+3) go to `@rawdatabot` and type something, grab `["message"]["from"]["id"]` value
 4) save this next to `CHAT_ID=` on credentials.py (without quotes)
 
 #### minimum a.k.a. 'I am going to implement my own auxillary scripts'
